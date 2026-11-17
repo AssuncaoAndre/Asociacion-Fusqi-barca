@@ -1,0 +1,7 @@
+# The learned model needs these on top of ../requirements.txt.
+# Pinned: a saved model (ml/artifacts/model.joblib) only loads reliably in the
+# scikit-learn version that wrote it.
+numpy==2.5.4
+pandas
+scikit-learn==1.9.1
+joblib==1.6.0

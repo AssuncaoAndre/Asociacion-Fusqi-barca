@@ -1,0 +1,23 @@
+# The match data bundle is NOT redistributable — never commit it.
+data/
+MTAH_DATA_DIR/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Model caches
+/mtah_cache/
+
+# Training data from other matches is downloaded, not committed (own licences)
+other-games/
+
+# Default output of ml/predict.py (the submission itself is the CSV at the root)
+ml/output/
+
+# Generated result files (the submission itself lives at the repository root)
+evaluation/results/*.csv
+
+# NOTE: ml/artifacts/ (the trained model + its settings) is committed ON PURPOSE --
+# together with the submission CSV it is what makes the file reproducible.
